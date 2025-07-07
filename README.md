@@ -29,7 +29,7 @@ Your job is to:
 
 ---
 
-## 💻 File: `bank.py`
+## 💻 File: `bug.py`
 
 This script contains:
 
