@@ -38,12 +38,11 @@ This script contains:
 - An example where a user starts with `100`, withdraws `50`, then tries to withdraw `60`.
 
 ## Fixed Output:
-Initial Balance: 100
-Balance after withdrawing 50: 50 ✅
-Withdrawal of 60 failed: insufficient funds.
-Balance after withdrawing 60: 50 ❌
-
-
+- Initial Balance: 100
+-  Balance after withdrawing 50: 50 ✅
+-  Withdrawal of 60 failed: insufficient funds.
+-  Balance after withdrawing 60: 50 ❌
+ 
 ### Example buggy output:
 ```txt
 Initial Balance: 100
