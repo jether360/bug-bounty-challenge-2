@@ -6,13 +6,24 @@ class BankAccount:
     def deposit(self, amount: float):
         if amount > 0:
             self.balance += amount
-
+        #Added
+        if amount < 1:
+            print("Error: Invalid Input")
     def withdraw(self, amount: float):
         if amount < 0:
-            raise ValueError("Cannot withdraw negative amount.")
+            print("Error: Cannot withdraw negative amount.")
+            print(f"Balance: {self.balance}")
+            return False
         if self.balance >= amount:
             self.balance -= amount
+            #Added
+            print(f"Balance after withdrawing {amount}: {self.balance}")
             return True
+        #Added
+        if amount > self.balance:
+            print(f"Withdrawal of {amount} failed: : insufficient funds.")
+            print(f"Balance after withdrawing {amount}: {self.balance} ❌")
+            return False
         return False
 
     def get_balance(self):
@@ -20,15 +31,13 @@ class BankAccount:
 
 
 def simulate():
+    
     account = BankAccount("Alice", 100)
     print(f"Initial Balance: {account.get_balance()}")
 
+    
     account.withdraw(50)
-    print(f"Balance after withdrawing 50: {account.get_balance()}")
-
     account.withdraw(60)
-    print(f"Balance after withdrawing 60: {account.get_balance()}")  
-
-
+    
 if __name__ == "__main__":
     simulate()
