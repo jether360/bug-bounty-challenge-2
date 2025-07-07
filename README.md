@@ -43,8 +43,8 @@ Initial Balance: 100
 Balance after withdrawing 50: 50
 Balance after withdrawing 60: -10   ❌ ← This should not happen!
 
-### Example buggy output:
-```txt
+Other Example buggy output:
+
 Initial Balance: 100
 Balance after withdrawing 50: 50
 Balance after withdrawing 60: 50  <-- Withdrawal should fail, so balance remains 50
