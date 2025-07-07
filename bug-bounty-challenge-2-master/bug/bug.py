@@ -1,5 +1,3 @@
-# bug.py
-
 class BankAccount:
     def __init__(self, account_holder: str, balance: float):
         self.account_holder = account_holder
@@ -10,8 +8,12 @@ class BankAccount:
             self.balance += amount
 
     def withdraw(self, amount: float):
+         # will not allow withdrawal if the amount is greater than the balance
         if amount < 0:
             raise ValueError("Cannot withdraw negative amount.")
+        
+ 
+        # will only proceed if the current balance is available
         if self.balance >= amount:
             self.balance -= amount
             return True
