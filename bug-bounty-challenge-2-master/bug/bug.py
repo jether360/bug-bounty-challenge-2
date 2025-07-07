@@ -33,10 +33,10 @@ def simulate():
         print(f"Withdrawal of 50 failed: insufficient funds.")
         print(f"Balance remains: {account.get_balance()}")
 
-    if account.withdraw(20):
+    if account.withdraw(60):
         print(f"Balance after withdrawing 60: {account.get_balance()}")
     else:
-        print(f"Withdrawal failed: insufficient funds.")
+        print(f"Withdrawal of 60 failed: insufficient funds.")
         print(f"Balance after withdrawing 60: {account.get_balance()}")
 
 
