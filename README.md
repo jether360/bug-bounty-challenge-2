@@ -37,6 +37,13 @@ This script contains:
 - A `simulate()` function to demonstrate its behavior.
 - An example where a user starts with `100`, withdraws `50`, then tries to withdraw `60`.
 
+## Fixed Output:
+Initial Balance: 100
+Balance after withdrawing 50: 50 ✅
+Withdrawal of 60 failed: insufficient funds.
+Balance after withdrawing 60: 50 ❌
+
+
 ### Example buggy output:
 ```txt
 Initial Balance: 100
@@ -48,3 +55,4 @@ Other Example buggy output:
 Initial Balance: 100
 Balance after withdrawing 50: 50
 Balance after withdrawing 60: 50  <-- Withdrawal should fail, so balance remains 50
+
