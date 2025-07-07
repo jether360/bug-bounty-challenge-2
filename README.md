@@ -23,6 +23,9 @@ Your job is to:
 - Users should **not** be able to withdraw more than their current balance.
 - The `withdraw()` method should return `True` if the withdrawal succeeds, otherwise `False`.
 - The balance should never go below `0`.
+- **Push everything to a separate branch** named:
+- The branch name should be formatted like this: balabagno-bug-bounty-challenge (replace balabagno with your family name).
+ 
 
 ---
 
